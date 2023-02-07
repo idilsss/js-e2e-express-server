@@ -1,6 +1,6 @@
 trigger:
 - master
-pool: MyPool
+pool: Azure Pipelines
 
 #pool:
 #  vmImage: 'windows-latest'
