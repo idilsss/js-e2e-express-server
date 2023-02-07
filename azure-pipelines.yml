@@ -1,3 +1,12 @@
+trigger:
+- master
+#pool: Azure Pipelines
+
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
 - task: netsparker-cloud@1
   inputs:
     apiConnection: 'invicti-con'
