@@ -1,9 +1,9 @@
 trigger:
 - master
-pool: Azure Pipelines
+#pool: Azure Pipelines
 
-#pool:
-#  vmImage: 'windows-latest'
+pool:
+  vmImage: 'windows-latest'
 
 steps:
 - powershell: |
