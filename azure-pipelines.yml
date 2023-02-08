@@ -5,3 +5,8 @@ pool:
   vmImage: 'windows-latest'
 
 steps:
+- task: netsparker-cloud@1
+  inputs:
+    apiConnection: 'invicti-con'
+    scanTypes: '1'
+    scanWebSites: '4fdb7266-fdac-4dec-a190-aeac02e81366'
