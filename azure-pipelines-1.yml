@@ -10,7 +10,9 @@ steps:
     inputs:
       apiConnection: 'invicti-1'
       scanTypes: '1'
-      scanWebSites: '4fdb7266-fdac-4dec-a190-aeac02e81366'
+      scanWebSites: 'b4a377dc-fc11-42d7-ecb8-aeb7020b8ec1'
       buildFail: true
+      severity: 'DoNotFail'
       hasReport: true
-      reportType: 'ScanDetail'
+      reportType: 'ExecutiveSummary'
+      excludeAddressedIssues: false
