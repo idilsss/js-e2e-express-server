@@ -1,8 +1,16 @@
-- task: netsparker-cloud@1
-  inputs:
-    apiConnection: 'invicti-1'
-    scanTypes: '1'
-    scanWebSites: '4fdb7266-fdac-4dec-a190-aeac02e81366'
-    buildFail: true
-    hasReport: true
-    reportType: 'ScanDetail'
+
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+  - task: netsparker-cloud@1
+    inputs:
+      apiConnection: 'invicti-1'
+      scanTypes: '1'
+      scanWebSites: '4fdb7266-fdac-4dec-a190-aeac02e81366'
+      buildFail: true
+      hasReport: true
+      reportType: 'ScanDetail'
