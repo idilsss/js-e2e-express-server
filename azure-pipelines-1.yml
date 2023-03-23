@@ -6,11 +6,11 @@ pool:
   vmImage: 'windows-latest'
 
 steps:
-    - task: netsparker-cloud@1
-    inputs:
-        apiConnection: 'invicti-1'
-        scanTypes: '1'
-        scanWebSites: '75bf5383-eb06-42c8-1a34-aeae0167b509'
-        buildFail: true
-        hasReport: true
-        reportType: 'ExecutiveSummary'
+- task: netsparker-cloud@1
+  inputs:
+    apiConnection: 'invicti-1'
+    scanTypes: '1'
+    scanWebSites: '75bf5383-eb06-42c8-1a34-aeae0167b509'
+    buildFail: true
+    hasReport: true
+    reportType: 'ExecutiveSummary'
